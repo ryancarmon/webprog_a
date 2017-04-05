@@ -4,8 +4,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Startseite</title>
+	<!-- Wird zukünftig in Extra Datei ausgelagert -->
 	<style>
 		/* main viewport */
+		/* Verwendung des Flexlayout, Zentrierung sowie Minimalabstände definiert */
 		main {
 			display: flex;
 			flex-flow: row wrap;
@@ -17,20 +19,24 @@
 			
 		}
 
+		/* Standartmäßig so viel wie möglich nebeneinander darstellen */
 		main > * {
 			flex: 1 100%;
 		}
 
+		/* Der Inhalt soll 75% der verfügbaren Breite (ohne Rand) verwenden */
 		section {
 			text-align: left;
 			width: 75%;
 		}
 
+		/* Seitenleiste bekommt den Rest zugeteilt */
 		aside {
 			width: 25%;
 		}
 
 		/* navigation */
+		/* Darstellung als Liste, Einschübe entfernt, Listenpunkte entfernt */
 		nav ul {
 			list-style-type: none;
 			margin: 0;
@@ -39,6 +45,7 @@
 			background-color: black;
 		}
 		
+		/* Darstellung eines Elements */
 		nav ul li {
 			display: block;
 			color: white;
@@ -46,19 +53,23 @@
 			padding: 14px 16px;
 		}
 
+		/* Element wird links angeordnet */
 		nav ul li.left {
 			float: left;
 		}
 
+		/* Element wird rechts angeordnet */
 		nav ul li.right {
 			float: right;
 		}
 
+		/* Unterstreichung von Links entfernen */
 		nav ul li a {
 			text-decoration: none;
 		}
 		
 		/* footer */
+		/* WIP - Bis jetzt, 1% Abstand von Unterkante */
 		footer {
 			position: absolute;
 			width: 60%;
@@ -68,7 +79,8 @@
 			margin-bottom: 1%;
 		}
 
-		/* small */
+		/* medium */
+		/* Ab mittlerer Gerätegröße werden die beiden Felder neben und nicht untereinander angezeigt */
 		@media all and (min-width: 768px) {
 			section {
 				flex: 1 auto;
@@ -79,7 +91,8 @@
 			}
 		}
 
-		/* medium */
+		/* large */
+		/* Bei großen Displays vergrößern wir den Rand */
 		@media all and (min-width: 900px) {
 			main {
 				margin-left: 20%;
@@ -89,6 +102,7 @@
 	</style>
   </head>
   <body>
+	<!-- Aufteilung des Body in Header, Navigation, Content (Main) und Footer -->
 	<header>
 	</header>
 	<nav>
@@ -112,6 +126,7 @@
 		  <br><br>
 		</section>
 	</main>
+	<!-- WIP -->
 	<footer style="border: 1px solid orange;">
 		Kuhles Projekt
 	</footer>
