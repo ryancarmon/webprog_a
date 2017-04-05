@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Startseite</title>
+	<style>
+		/* main viewport */
+		main {
+			display: flex;
+			flex-flow: row wrap;
+			text-align: center;
+			position: center;
+			margin-top: 32px;
+			margin-left: 5%;
+			margin-right: 5%; 
+			
+		}
+
+		main > * {
+			flex: 1 100%;
+		}
+
+		section {
+			text-align: left;
+			width: 75%;
+		}
+
+		aside {
+			width: 25%;
+		}
+
+		/* navigation */
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+		}
+		
+		nav ul li {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+		}
+
+		nav ul li.left {
+			float: left;
+		}
+
+		nav ul li.right {
+			float: right;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+		}
+		
+		/* footer */
+		footer {
+			position: absolute;
+			width: 60%;
+			bottom: 0px;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-bottom: 1%;
+		}
+
+		/* small */
+		@media all and (min-width: 768px) {
+			section {
+				flex: 1 auto;
+			}
+			aside {
+				flex: 5 0px;
+				order: 2;
+			}
+		}
+
+		/* medium */
+		@media all and (min-width: 900px) {
+			main {
+				margin-left: 20%;
+				margin-right: 20%;
+			}
+		}
+	</style>
+  </head>
+  <body>
+	<header>
+	</header>
+	<nav>
+		<ul>
+			<li class="left">
+				Logo
+			</li>
+			<li class="right">
+				<a>Login</a>
+			</li>
+			<li class="right">
+				<a>Register</a>
+			</li>
+		</ul>
+	</nav>
+	<main style="border: 2px solid black;">
+		<aside style="border: 1px solid blue">
+		  <br><br>
+		</aside>
+		<section style="border: 1px solid red;">
+		  <br><br>
+		</section>
+	</main>
+	<footer style="border: 1px solid orange;">
+		Kuhles Projekt
+	</footer>
+  </body>
+</html>
