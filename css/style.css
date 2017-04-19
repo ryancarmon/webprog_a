@@ -1,0 +1,141 @@
+* {
+			font-family: Josefin Sans;
+		}
+	
+		/* main viewport */
+		/* Verwendung des Flexlayout, Zentrierung sowie Minimalabstände definiert */
+		main {
+			display: flex;
+			flex-flow: row wrap;
+			text-align: center;
+			position: center;
+			margin-top: 32px;
+			margin-left: 5%;
+			margin-right: 5%; 
+			
+		}
+
+		/* Standartmäßig (Kleines Display, werden die Elemente untereinander angezeigt) */
+		main > * {
+			flex: 1 100%;
+		}
+
+		/* Der Inhalt soll 75% der verfügbaren Breite (ohne Rand) verwenden */
+		section {
+			text-align: left;
+			width: 75%;
+		}
+
+		/* Seitenleiste bekommt den Rest zugeteilt */
+		aside {
+			width: 25%;
+		}
+
+		/* navigation */
+		/* Darstellung als Liste, Einschübe entfernt, Listenpunkte entfernt */
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+		}
+		
+		/* Darstellung eines Elements */
+		nav ul li {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+		}
+
+		/* Element wird links angeordnet */
+		nav ul li.left {
+			float: left;
+		}
+
+		/* Element wird rechts angeordnet */
+		nav ul li.right {
+			float: right;
+		}
+
+		/* Unterstreichung von Links entfernen */
+		nav ul li a {
+			text-decoration: none;
+		}
+		
+		/* footer */
+		/* WIP - Bis jetzt, 1% Abstand von Unterkante */
+		footer {
+			position: absolute;
+			width: 60%;
+			bottom: 0px;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-bottom: 1%;
+		}
+		
+		/* Main - Login Box */
+		#login {
+			background-color: orange;
+			border-radius: 10px;
+			padding: 15px;
+			width: 100%;
+			height: 100%;
+		}
+		
+		#login input {
+			display: block;
+			width: 90%;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		
+		#login input[type=submit] {
+			float: right;
+			margin-right: 15px;
+			text-align: center;
+			width: 45%;
+			height: 3em;
+		}
+		
+		#login input[type=reset] {
+			float: left;
+			text-align: center;
+			width: 45%;
+			height: 3em;
+		}
+		
+		input[type=submit], input[type=reset] {
+			background-color: green;
+			border: none;
+			margin-bottom: 0px;
+		}
+		
+		input[type=text], input[type=password] {
+			border-radius: 5px;
+			border: none;
+			font-size: 18px;
+			height: 2em;
+		}
+
+		/* medium */
+		/* Ab mittlerer Gerätegröße werden die beiden Felder neben und nicht untereinander angezeigt */
+		@media all and (min-width: 768px) {
+			section {
+				flex: 1 auto;
+			}
+			aside {
+				flex: 5 0px;
+				order: 2;
+			}
+		}
+
+		/* large */
+		/* Bei großen Displays vergrößern wir den Rand */
+		@media all and (min-width: 900px) {
+			main {
+				margin-left: 20%;
+				margin-right: 20%;
+			}
+		}

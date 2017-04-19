@@ -1,0 +1,17 @@
+#login {
+	margin: auto;
+	max-width: 400px;
+}
+
+#login input[type=text], #login input[type=password] {
+	width: calc(100% - 20px);
+	max-width: 400px;
+}
+
+#login input[type=button] {
+	float: left;
+	width: 45%;
+	height: 3em;
+	border: none;
+	background-color: green;
+}

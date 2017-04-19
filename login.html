@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
 	<!-- Wird zukünftig in Extra Datei ausgelagert -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
   </head>
   <body>
 	<!-- Aufteilung des Body in Header, Navigation, Content (Main) und Footer -->
@@ -27,20 +28,19 @@
 		</ul>
 	</nav>
 	<main style="border: 2px solid black;">
-		<aside style="border: 1px solid blue">
+		<section style="border: 1px solid red;">
 		  <section id="login">
-			<form method="POST" action="login.html">
+			<form method="POST" action="home.html">
 				Benutzername:<br>
 				<input type="Text" name="user" maxlength="50" placeholder="Benutzername">
 				Passwort:<br>
 				<input type="Password" name="pass" placeholder="Passwort">
 				<br>
+				<!-- TODO: Registrierung durch Link ersetzen -->
 				<input type="Submit" value="Login">
+				<input id="regbutton" type="Button" value="Registrieren">
 			</form>
 		  </section>
-		</aside>
-		<section style="border: 1px solid red;">
-		  <br><br>
 		</section>
 	</main>
 	<!-- WIP -->
