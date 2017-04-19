@@ -30,6 +30,10 @@
 		aside {
 			width: 25%;
 		}
+		
+		nav {
+			height: 30px;
+		}
 
 		/* navigation */
 		/* Darstellung als Liste, Einschübe entfernt, Listenpunkte entfernt */
@@ -46,7 +50,18 @@
 			display: block;
 			color: white;
 			text-align: center;
-			padding: 14px 16px;
+			margin: 5px;
+			padding: 9px 11px;
+			min-width: 80px;
+			width: 5%;
+		}
+		
+		/* Rahmen um ein Element bei Überfahren mit der Maus */
+		nav ul li:hover {
+			border: 2px solid blue;
+			border-radius: 5px;
+			padding: 7px 9px;
+			cursor: pointer;
 		}
 
 		/* Element wird links angeordnet */
@@ -97,6 +112,16 @@
 			text-align: center;
 			width: 45%;
 			height: 3em;
+			border-radius: 4px;
+		}
+		
+		#login input[type=submit]:hover {
+			border: 2px solid orange;
+			border-radius: 4px;
+		}
+		
+		#login input[type=submit]:click {
+			
 		}
 		
 		#login input[type=reset] {
@@ -117,6 +142,7 @@
 			border: none;
 			font-size: 18px;
 			height: 2em;
+			padding-left: 5px;
 		}
 
 		/* medium */
