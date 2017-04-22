@@ -8,7 +8,6 @@ main {
 	display: flex;
 	flex-flow: row wrap;
 	text-align: center;
-	position: center;
 	margin-top: 32px;
 	margin-left: 5%;
 	margin-right: 5%; 
@@ -24,7 +23,9 @@ main > * {
 section {
 	text-align: left;
 	width: 75%;
-	
+}
+
+#login {
 }
 
 /* Seitenleiste bekommt den Rest zugeteilt */
@@ -68,11 +69,13 @@ nav ul li:hover {
 /* Element wird links angeordnet */
 nav ul li.left {
 	float: left;
+	margin-left: 0px;
 }
 
 /* Element wird rechts angeordnet */
 nav ul li.right {
 	float: right;
+	margin-right: 0px;
 }
 
 /* Unterstreichung von Links entfernen */
@@ -84,11 +87,20 @@ nav ul li a {
 /* WIP - Bis jetzt, 1% Abstand von Unterkante */
 footer {
 	position: absolute;
-	width: 60%;
-	bottom: 0px;
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-bottom: 1%;
+	bottom: 20px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 5px solid gray;
+	border-radius: 10px;
+	background-color: gray;
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
 }
 
 /* Main - Login Box */
@@ -112,9 +124,9 @@ footer {
 
 #login input[type=submit], #login input[type=reset] {
 	float: right;
-	margin: 0 10px 10px 10px;
+	margin: 0 5px 10px 5px;
 	text-align: center;
-	width: 45%;
+	width: 40%;
 	height: 3em;
 	border-radius: 4px;
 }
@@ -151,6 +163,29 @@ input[type=text], input[type=password] {
 	-height: 2em;
 	margin-left: 5px;
 	padding: 5px;
+}
+
+.left {
+	margin-left: 5px;
+	float: left;
+}
+
+.right{
+	float: right;
+	margin-right: 5px;
+}
+
+#regbutton {
+	float: left;
+	margin: 0 10px 0px 10px;
+	width: calc(40% - 4px);
+	height: calc(3em - 6px);
+	line-height: calc(3em - 6px);
+	text-align: center;
+	border-radius: 4px;
+	font-size: 14px;
+	text-decoration: none;
+	border: 2px solid gray;
 }
 
 /* medium */

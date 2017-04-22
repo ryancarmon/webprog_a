@@ -18,7 +18,7 @@
 
 #regbutton {
 	float: left;
-	margin: 0 10px 10px 10px;
+	margin: 0 10px 5px 10px;
 	width: calc(45% - 4px);
 	height: calc(3em - 6px);
 	line-height: calc(3em - 6px);
@@ -27,4 +27,7 @@
 	font-size: 14px;
 	text-decoration: none;
 	border: 2px solid gray;
+}
+
+#blub {
 }
