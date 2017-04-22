@@ -9,6 +9,7 @@
 	<!-- Wird zukünftig in Extra Datei ausgelagert -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/scheme_draft.css">
   </head>
   <body>
 	<!-- Aufteilung des Body in Header, Navigation, Content (Main) und Footer -->
@@ -27,9 +28,11 @@
 			</li>
 		</ul>
 	</nav>
-	<main style="border: 2px solid black;">
-		<section style="border: 1px solid red;">
+	<main>
+		<section>
 		  <section id="login">
+			<h3>Login</h3>
+		  
 			<form method="POST" action="home.html">
 				Benutzername:<br>
 				<input type="Text" name="user" maxlength="50" placeholder="Benutzername">
@@ -38,7 +41,7 @@
 				<br>
 				<!-- TODO: Registrierung durch Link ersetzen -->
 				<input type="Submit" value="Login">
-				<input id="regbutton" type="Button" value="Registrieren">
+				<a id="regbutton" href="register.html">Registrieren</a>
 			</form>
 		  </section>
 		</section>

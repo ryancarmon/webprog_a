@@ -23,12 +23,12 @@ nav ul li:hover a{
 	border: 1px solid #009ab2;
 }
 
-#login input[type=submit] {
+#login input[type=submit], #login input[type=reset], #regbutton {
 	color: white;
 	background-color: grey;
 }
 
-#login input[type=submit]:hover {
+#login input[type=submit]:hover, #login input[type=reset]:hover, #regbutton:hover {
 	color: #009ab2;
 	background-color: #F5F5F5;
 	border: 2px solid #009ab2;
