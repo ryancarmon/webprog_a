@@ -2,6 +2,11 @@
 	font-family: Josefin Sans;
 }
 
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
 /* main viewport */
 /* Verwendung des Flexlayout, Zentrierung sowie Minimalabstände definiert */
 main {
@@ -11,7 +16,7 @@ main {
 	margin-top: 32px;
 	margin-left: 5%;
 	margin-right: 5%; 
-	
+	height: calc(100% - 128px);
 }
 
 /* Standartmäßig (Kleines Display, werden die Elemente untereinander angezeigt) */
@@ -25,8 +30,7 @@ section {
 	width: 75%;
 }
 
-#login {
-}
+
 
 /* Seitenleiste bekommt den Rest zugeteilt */
 aside {
@@ -84,7 +88,6 @@ nav ul li a {
 }
 
 /* footer */
-/* WIP - Bis jetzt, 1% Abstand von Unterkante */
 footer {
 	position: absolute;
 	bottom: 20px;
@@ -92,7 +95,7 @@ footer {
 	margin-left: 10%;
 	margin-right: 10%;
 	border: 5px solid gray;
-	border-radius: 10px;
+	border-radius: 5px;
 	background-color: gray;
 	color: white;
 }
@@ -105,13 +108,11 @@ footer a {
 
 /* Main - Login Box */
 #login {
+	margin-top: 50%;
+	margin-bottom: 50%;
 	background-color: orange;
 	border-radius: 10px;
-	width: 100%;
-	height: 100%;
 	padding: 5px;
-	width: calc(100% - 10px);
-	height: calc(100% - 10px);
 }
 
 #login input {
@@ -206,5 +207,6 @@ input[type=text], input[type=password] {
 	main {
 		margin-left: 20%;
 		margin-right: 20%;
+		width: 60%;
 	}
 }
