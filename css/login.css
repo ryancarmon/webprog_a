@@ -28,16 +28,3 @@
 	text-decoration: none;
 	border: 2px solid gray;
 }
-
-main {
-	display: block;
-}
-
-#headline_large {
-	font-family: Varela Round;
-	font-size: 50px;
-	font-weight: bold;
-	margin: 20% auto;
-	margin-bottom: 0px;
-	max-width: 300px;
-}
