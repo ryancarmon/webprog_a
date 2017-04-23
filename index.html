@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
 	<!-- Wird zukünftig in Extra Datei ausgelagert -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<!-- Farbgebung Vorschlag -->
 	<link rel="stylesheet" type="text/css" href="css/scheme_draft.css">
   </head>
@@ -30,19 +31,22 @@
 	</nav>
 	<main style="border: 2px solid black;">
 		<aside style="border: 1px solid blue">
-		  <section id="login">
-			<h3>Login</h3>
-		  
-			<form method="POST" action="home.html">
-				Benutzername:<br>
-				<input type="Text" name="user" maxlength="50" placeholder="Benutzername">
-				Passwort:<br>
-				<input type="Password" name="pass" placeholder="Passwort">
-				<br>
-				<a id="regbutton" href="register.html">Registrieren</a>
-				<input class="button" type="Submit" value="Login">
-			</form>
-		  </section>
+		  <section id="logincontainer">
+			  <section id="login">
+				<h3>Login</h3>
+			  
+				<form method="POST" action="home.html">
+					Benutzername:<br>
+					<input type="Text" name="user" maxlength="50" placeholder="Benutzername">
+					Passwort:<br>
+					<input type="Password" name="pass" placeholder="Passwort">
+					<br>
+					<a id="regbutton" href="register.html">Registrieren</a>
+					<input type="Submit" value="Login">
+				</form>
+				<!-- DIV ALARM -->
+			  </section>
+			</section>
 		</aside>
 		<section style="border: 1px solid red;">
 		  <br><br>

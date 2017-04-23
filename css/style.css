@@ -107,6 +107,12 @@ footer a {
 }
 
 /* Main - Login Box */
+#logincontainer {
+	clear: both;
+	width: 100%;
+	background-color: #F5F5F5;
+}
+
 #login {
 	margin-top: 50%;
 	margin-bottom: 50%;
@@ -124,8 +130,8 @@ footer a {
 
 
 #login input[type=submit], #login input[type=reset] {
-	float: right;
-	margin: 0 5px 10px 5px;
+	display: inline-block;
+	margin: 0 10px 10px 10px;
 	text-align: center;
 	width: 40%;
 	height: 3em;
@@ -177,8 +183,8 @@ input[type=text], input[type=password] {
 }
 
 #regbutton {
-	float: left;
-	margin: 0 10px 0px 10px;
+	display: inline-block;
+	margin: 0 10px 10px 10px;
 	width: calc(40% - 4px);
 	height: calc(3em - 6px);
 	line-height: calc(3em - 6px);
