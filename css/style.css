@@ -30,8 +30,6 @@ section {
 	width: 75%;
 }
 
-
-
 /* Seitenleiste bekommt den Rest zugeteilt */
 aside {
 	width: 25%;
@@ -104,13 +102,6 @@ footer a {
 	text-decoration: none;
 	color: white;
 	cursor: pointer;
-}
-
-/* Main - Login Box */
-#logincontainer {
-	clear: both;
-	width: 100%;
-	background-color: #F5F5F5;
 }
 
 #login {

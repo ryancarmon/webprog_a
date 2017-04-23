@@ -20,6 +20,8 @@ main {
 	background-color: #F5F5F5;
 	padding: 5px;
 	margin-bottom: 50px;
+	box-shadow: 10px 15px 20px grey;
+
 }
 
 .post > article {

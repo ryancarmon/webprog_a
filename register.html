@@ -4,18 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Startseite</title>
-	<!-- Font Stylesheet -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-	<!-- Wird zukünftig in Extra Datei ausgelagert -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
-	<link rel="stylesheet" type="text/css" href="css/scheme_draft.css">
+	<link rel="stylesheet" type="text/css" href="css/style_final.css">
+	<link rel="stylesheet" type="text/css" href="css/register_final.css">
+	<link rel="stylesheet" type="text/css" href="css/scheme_final.css">
   </head>
   <body>
-	<!-- Aufteilung des Body in Header, Navigation, Content (Main) und Footer -->
-	<header>
-	</header>
 	<nav>
 		<ul>
 			<li class="left">
@@ -30,21 +24,21 @@
 		</ul>
 	</nav>
 	<main>	
-	  <section id="login">
+	  <section id="register" class="bg">
 		<h3>Registrierung</h3>
 	  
-		<form method="GET" action="home.html">
+		<form method="GET" action="login.html">
 			Benutzername:<br>
-			<input type="Text" name="user" maxlength="50" placeholder="Benutzername">
+			<input class="text" type="Text" name="user" maxlength="50" placeholder="Benutzername">
 			E-Mail-Adresse:<br>
-			<input type="Text" name="mail" placeholder="E-Mail Adresse">
+			<input class="text" type="Text" name="mail" placeholder="E-Mail Adresse">
 			Passwort:<br>
-			<input type="Password" name="pass" placeholder="Passwort">
+			<input class="text" type="Password" name="pass" placeholder="Passwort">
 			Passwort bestätigen:<br>
-			<input type="Password" name="pass_confirm" placeholder="Passwort bestätigen">
+			<input class="text" type="Password" name="pass_confirm" placeholder="Passwort bestätigen">
 			<br>
-			<input type="Reset" value="Zurücksetzen">
-			<input type="Submit" value="Registrieren">
+			<input class="button" type="Reset" value="Zurücksetzen">
+			<input class="button" type="Submit" value="Registrieren">
 		</form>
 	  </section>
 	</main>

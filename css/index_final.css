@@ -1,0 +1,54 @@
+/* Login Box */
+aside {
+	width: 25%;
+	
+	padding: 5px;
+	
+	border-radius: 10px;
+}
+
+#login {
+	padding: 5px;
+	
+	border-radius: 10px;
+}
+
+.urlbutton {
+	margin-right: 20%;
+}
+
+/* Promo Box */
+#promo {
+	width: 75%;
+	
+	padding-top: 50px;
+	
+	font-size: 25px;
+}
+
+/* Größenspezifisch: */
+/* Kleines Display (Elemente untereinander) */
+main > * {
+	flex: 1 100%;
+}
+
+/* Mittleres Display (Elemente nebeneinander, kleiner Seitenabstand) */
+@media all and (min-width: 768px) {
+	#promo {
+		flex: 1 auto;
+	}
+	aside {
+		flex: 5 0px;
+		order: 2;
+	}
+}
+
+/* Großes Display (Elemente nebeneinander, großer Seitenabstand) */
+@media all and (min-width: 900px) {
+	main {
+		width: 60%;
+		
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
