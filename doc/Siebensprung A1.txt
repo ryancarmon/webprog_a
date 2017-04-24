@@ -1,0 +1,44 @@
+Schritt 2:
+-Entwicklung Layout
+-Entwicklung v. Komponenten im Layout
+-Entwicklung v. Design
+
+Schritt 3:
+-Verschiedene Layoutkonzepte (Elemente unter/nebeneinander)
+=>Layout Hauptseiten: Inhalt - wo nötig - nebeneinander, sonst mittig am Bildschirm
+	Bei zu kleinen Displays Elemente nach Priorität untereinander
+-Verschiedene Komponenten:
+=>Entwicklung von 3 verschiedenen Button-Styles
+
+Schritt 4:
+??
+
+Schritt 5:
+-Welches HTML5-Element wo
+
+Probleme bei d. Impl:
+-Nicht jeder Button-Style mit jedem Input möglich
+-Link als Button stylen => Sonderfall (Border!)
+-Buttons mit float implementiert: Element hätte mit zusätzlichem Container mit 
+	"clear: both;" abgeschlossen müssen, um Rahmen um Container zu ermöglichen
+	Durch Umstieg auf display: inline-block; mit margin-right bei linkem Element
+	selbes Resultat ohne zusätzliche Objekte
+-a hover verschiebt Elemente durch Rahmen
+-Flex Layout teilweise überflüssig, nur auf index wirklich nötig
+
+Gedanken bei d. Impl:
+-Responsive Design, aber Flex-Layout nicht immer von Nöten
+-Über entwicklungszeit viel überflüssiger/doppelter css-Quellcode notiert
+=>Entwicklung eines gemeinsamen Styles, einzelne Abweichungen auf Seiten in zusätzlicher
+	Datei überschrieben
+=>Durch Zusammenfassung Reduktion des gesamt benötigten css-Code
+-Umsetzung der Farbgebung in externem Stylesheet
+-Navigationselemente: Eingebaute Login-Box oder Umleitung auf externe Seite.
+
+Mögliche Fragen:
+inline-block (was tut das genau)
+Warum Flex
+
+Zu klären:
+figure für Post-Header (alt: section?)
+definitionen section, article, aside etc
