@@ -30,8 +30,6 @@ nav ul li:hover a, nav ul li:active a {
 footer {
 	color: white;
 	background-color: gray;
-	
-	border-color: gray;
 }
 
 footer a {
