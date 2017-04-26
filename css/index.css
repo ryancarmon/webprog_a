@@ -17,7 +17,13 @@ aside {
 	padding: 5px;
 }
 
+.button {
+	width: calc(40% - 10px);
+}
+
 .urlbutton {
+	width: calc(40% - 14px);
+	
 	margin-right: 10%;
 }
 

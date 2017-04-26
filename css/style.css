@@ -92,7 +92,7 @@ footer a {
 
 .button {
 	display: inline-block;
-	width: calc(45% - 10px);
+	width: calc(40% - 10px);
 	height: 3em;
 	min-width: 75px;
 		
@@ -106,7 +106,7 @@ footer a {
 }
 
 .urlbutton {
-	width: calc(45% - 14px);
+	width: calc(40% - 14px);
 	height: calc(3em - 6px);
 	
 	border: 2px solid white;
