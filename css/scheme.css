@@ -7,11 +7,11 @@ body {
 
 /* Navigation */
 nav {
-	background-color: gray;
+	background-color: #A0A0A0;
 }
 
 nav ul li {
-	border-color: gray;
+	border-color: #A0A0A0;
 }
 
 nav ul li a {
@@ -31,7 +31,7 @@ nav ul li:hover a, nav ul li:active a {
 /* Fußzeile */
 footer {
 	color: white;
-	background-color: gray;
+	background-color: #A0A0A0;
 }
 
 footer a {
@@ -50,11 +50,11 @@ footer a {
 
 .button {
 	color: white;
-	background-color: grey;
+	background-color: #A0A0A0;
 }
 
 .urlbutton {
-	border-color: gray;
+	border-color: #A0A0A0;
 }
 
 .button:hover, .button:active {
