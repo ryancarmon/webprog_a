@@ -1,11 +1,13 @@
 /* Page Definitions */
 body {
 	background-color: white;
+	
+	background-image: url('../img/background.jpg');
 }
 
 /* Navigation */
-nav ul {
-	background-color: grey;
+nav {
+	background-color: gray;
 }
 
 nav ul li {

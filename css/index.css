@@ -1,16 +1,20 @@
+main {
+	margin-top: 50px;
+	
+	border-radius: 5px;
+	
+	background-color: rgba(211,211,211, 0.9);
+}
+
 /* Login Box */
 aside {
-	width: 25%;
+	width: 30%;
 	
 	padding: 5px;
-	
-	border-radius: 10px;
 }
 
 #login {
 	padding: 5px;
-	
-	border-radius: 10px;
 }
 
 .urlbutton {
@@ -19,11 +23,17 @@ aside {
 
 /* Promo Box */
 #promo {
-	width: 75%;
+	width: 70%;
+	min-height: 200px;
 	
+	padding: 5px;
 	padding-top: 50px;
 	
 	font-size: 20px
+}
+
+#promo article {
+	padding-left: 20px;
 }
 
 #promo h2 {
